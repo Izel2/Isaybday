@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title></title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background-image: url('Background.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "top-left top-right"
+                "button button"
+                "bottom-left bottom-right"
+                ". bottom-text";
+            gap: 20px;
+            text-align: center;
+            position: relative; 
+        }
+
+        .box {
+            width: 195px;
+            height: 300px;
+            border: 2px solid white;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box img {
+            width: 195px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .box-top-left {
+            grid-area: top-left;
+        }
+
+        .box-bottom-right {
+            grid-area: bottom-right;
+        }
+
+        .text {
+            color: white;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 11.5px;
+            line-height: 1;
+            text-align: justify ;
+        }
+
+        .text-top-right {
+            grid-area: top-right;
+        }
+
+        .text-bottom-left {
+            grid-area: bottom-left;
+        }
+
+        .text-bottom {
+            grid-area: bottom-text;
+            position: absolute;
+            bottom: 8px; 
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 10px; 
+            font-size: 12px; 
+            line-height: 1.4; 
+        }
+
+        .button {
+            grid-area: button;
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            margin: auto;
+        }
+    </style> 
+</head> 
+<body> 
+    <audio autoplay>
+        <source src="hbd.mp3" type="audio/mp3">
+            
+    </audio>
+    <div class="container"> 
+        <div class="box bo
+            Happy birthday Assaila Anjani. Do you realise just how far you've come? Thank you for surviving this far. You've come a long way and have been through so much. Please thank yourself for how far you've come because it hasn't been easy. I hope 20 treats you better than 19 did. I wish you nothing but more years i'll always pray to God to continue blessing yo with bigger and bigger things in your life cause you deserve that, and i wish to spend more upcoming birthdays with you.            
+            <img src="MyGirl.jpg" alt="Image 1"> 
+        </div> 
+        <div class="text text-top-right">
+            Ha! y birthday! I hope this year brings you hope and laughter.Remember that you are never alone you have amazing people around that always support you and always are with you in your ups and downs. Hopefully this year brings you ,ll the best,hopefully you make amazing new friends and remember this is a start of a new chapter in your life so have fun always. Remember that everything is going to be alright and your life is going to be better. Last year was amazing and this year is going to be even better that last year you are going to make new memories and Friends have an amazing year and always smile happy birthday to an amazing person
+        </div> 
+     <a href="card" class="button">BALAS</a>
+        <div class="text text-bottom-left">
+            
+        </div> 
+        <div class="box box-bottom-right"> 
+            <img src="My-Girl.jpg" alt="Image 2"> 
+        </div> 
+        <div class="text text-bottom">
+            Stay gorgeous little one. Have a nice day!!
+        </div> 
+    </div> 
+</body>
+</html>

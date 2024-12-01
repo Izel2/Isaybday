@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title></title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background-image: url('Background.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "top-left top-right"
+                "button button"
+                "bottom-left bottom-right"
+                ". bottom-text";
+            gap: 6px;
+            text-align: center;
+            position: relative; 
+        }
+
+        .box {
+            width: 195px;
+            height: 300px;
+            border: 2px solid white;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box img {
+            width: 195px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .box-top-left {
+            grid-area: top-left;
+        }
+
+        .box-bottom-right {
+            grid-area: bottom-right;
+        }
+
+        .text {
+            color: white;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 10px;
+            line-height: 1;
+            text-align: justify;
+        }
+
+        .text-top-right {
+            grid-area: top-right;
+        }
+
+        .text-bottom-left {
+            grid-area: bottom-left;
+        }
+
+        .text-bottom {
+            grid-area: bottom-text;
+            position: absolute;
+            bottom: 22px; 
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 10px 20px; 
+            font-size: 14px; 
+            line-height: 1.4; 
+            
+        }
+        .text-top {
+            grid-area: bottom-text;
+            position: relative;
+            right: 200px;
+            bottom: 430px;
+            padding: 10px 10px; 
+            font-size: 12px; 
+            line-height: 1.4; 
+            width: 160px;
+            height: 33px;
+            
+           
+ }
+            
+        .button {
+            grid-area: button;
+            padding: 5px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            margin: auto;
+        }
+    </style> 
+</head> 
+<body> 
+    <audio autoplay>
+        <source src="hbd.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container"> 
+        <div class="box box-top-left"> 
+            <img src="MyGirl.jpg" alt="Image 1"> 
+        </div> 
+        <div class="text text-top">
+           I Hope your birthday makes you grin! Best wishes, always!
+            
+        </div>
+        
+        <div class="text text-top-right">
+            Happy birthday Ma Luisa!!!. Do you realise just how far you've come? Thank you for surviving this far. You've come a long way and have been through so much. Please thank yourself for how far you've come because it hasn't been easy. I hope 20 treats you better than 19 did. I wish you nothing but more years i'll always pray to God to continue blessing you with bigger and bigger things in your life cause you deserve that.I wish to spend more upcoming birthdays with you.  I'm so proud of you, i'm proud that you're trying everyday to get up and get things done. I'm proud because you're still growing and trying and i'm so proud of who you are and what you're yet to become but still continue to be humble and kind. I hope you know how brave, important, sparkling & wonderful you always are, even if you don't feel like that. Be safe, ik u have suffered facing all the troubles, its okay to take a break but remember, never give up! we're too young to surrender, ignore those negative thoughts, you are doing well, if no one appreciates with your struggle, remember i am here, always be ur supporter (even in the silence), i'll always pray for ur success, may God grant you the happiness that you always dreamed of, ihyk, i keep you in my every prayers, alwayss(⁠^⁠^⁠)
+        </div> 
+        <a href="card" class="button">Next</a>
+        <div class="text text-bottom-left">
+         I hope this year brings you hope and laughter.Remember that you are never alone you have amazing people around that always support you and always are with you in your ups and downs. Hopefully this year brings you the best,hopefully you make amazing new friends and remember this is a start of a new chapter in your life so have fun always. Remember that everything is going to be alright and your life is going to be better. You have always been a hoper and a dreamer and a great friend to people too.Hoping that you make new and amazing memories with your Friends. Have an amazing year and always smile. ^^ 
+         <br> 
+         <br>
+         I hope your birthday this year is better than your past ones, you deserve to have something good Thank you so much for being this person that you are, I feel greatful to have crossed paths with you and greatful to have you in my life. May happiness bloom in your heart all year long, may ur every wish come true. I hope your special day will surrounded by happiness, blessed with love, brightened with fun. I'll always by your side. ^^
+        </div> 
+        <div class="box box-bottom-right"> 
+            <img src="My-Girl.jpg" alt="Image 2"> 
+        </div> 
+        <div class="text text-bottom">
+            Stay gorgeous little one. Have a nice day!!
+        </div> 
+    </div> 
+</body>
+</html>
