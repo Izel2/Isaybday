@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700..800&display=swap');
+;
+
+* {
+  transition: all 5s ease-in-out;
+}
+
+body {
+  background-image: url(kk.jpg);
+  display: grid;
+  place-items: center;    
+  height: 150px;
+  margin: 0;  0vh;
+  font-family:"caveat" cursive;
+  color: #fff; /* Improved text contrast */
+  
+}
+
+.card {
+  background-image: url(kkk.jpg) ;
+  background-size: cover;
+  border-radius: 2px;
+  height: 2600px;
+  width: 1500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjusted box shadow for dept
+text-align: center;    h */
+  display: flex;
+  flex-direction: column;
+justify-content: center;  
+  align-items:center;  
+  padding: 2em;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 50px;
+    max-width: 500vw;
+    max-height: 100px;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 300px;
+    height: 300px;
+    max-width: 500vw;
+    max-height: 300px;
+  }
+}
+
+img.birthday {
+  max-height: 400vh;
+}
+
+.text {
+  padding: 1em;
+  color: #000000; /* Adjusted text color */
+  font-family:"caveat", cursive;
+  font-size:45px;  
+    
+}
+
+p {
+    font-size:45px;
+    font-family:"caveat" monospace;
+    font-style:bold;
+  
+}
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body.play-music {
+  animation: fadeIn 2s ease-in-out; /* Adjust the animation duration and timing function as needed */
+}
